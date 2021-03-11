@@ -27,7 +27,7 @@
           </li>
         </div>
       </ul>
-      <ng-template [ngIf]="onlyOdd">
+      <ng-template [ngIf]="!onlyOdd">
         <p>Only odd</p>
         <p>{{ prueba }}</p>
       </ng-template>-->
@@ -44,10 +44,10 @@
       <p appBasicHighlight>The world is very beatiful today and tomorrow with basic directive!!!</p>
       <p [appBetterHighlight]="'red'" defaultColor='yellow'>The world is very beatiful today and tomorrow with better directive!!!</p>
       <div [ngSwitch]="value">
-        <p *ngSwitchCase="5">Value is 5</p>
-        <p *ngSwitchCase="10">Value is 10</p>
-        <p *ngSwitchCase="100">Value is 100</p>
-        <p *ngSwitchDefault>Value is Default</p>
+        <p *ngSwitchCase="5" [ngStyle]="{color:'blue', fontWeight:'bold'}">Value is 5</p>
+        <p *ngSwitchCase="10" [ngStyle]="{color:'#8000ff', fontWeight:'bold'}">Value is 10</p>
+        <p *ngSwitchCase="100" [ngStyle]="{color:'#ffa500', fontWeight:'bold'}">Value is 100</p>
+        <p *ngSwitchDefault [ngStyle]="{color:'red', fontWeight:'bold'}">Value is Default</p>
       </div>
     </div>
   </div>

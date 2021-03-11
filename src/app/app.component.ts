@@ -11,5 +11,5 @@ export class AppComponent {
   evenNumbers = [2, 4];
   onlyOdd = false;
   prueba =  "Es un prueba";
-  value = 1;
+  value = 100;
 }

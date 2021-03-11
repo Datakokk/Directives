@@ -1,6 +1,11 @@
-import { ThrowStmt } from '@angular/compiler';
-import { Directive, ElementRef, HostBinding, HostListener, Input, OnInit, Renderer2 } from '@angular/core';
-import { bindCallback } from 'rxjs';
+import { 
+  Directive,  
+  ElementRef, 
+  HostBinding, 
+  HostListener, 
+  Input, 
+  OnInit, 
+  Renderer2 } from '@angular/core';
 
 @Directive({
   selector: '[appBetterHighlight]'
